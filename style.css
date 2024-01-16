@@ -21,6 +21,9 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p{
 
 @media screen and (min-width: 768px) {
     .w25 { width: 25%;}
+    .w5 { width: 5%;}
+    .w95 { width: 95%;}
+    .w10 {  width: 10%;}
     .w33 { width: 33.3%;}
     .w40 { width: 40%;}
     .w50 { width: 50%;}
@@ -28,14 +31,19 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p{
     .w30 { width: 30%;}
     .w70 { width: 70%;}
     .w100 { width: 100%;}
+    .w20 { width: 20%;}
+    .w90 { width: 90%;}
+    .w80 { width: 80%;}
     .container { width: 1200px; margin: 0 auto;}
     .left { float: left;}
     .right { float: right;}
     .clear { clear: both;}
+
+   
     .product-buy {
         display: none;
         font-size: 20px;
-        margin-top: 55px;
+        margin-top: 75px;
     }
     
     .product-buy a {
@@ -47,7 +55,7 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p{
     }
     
     .product-blocks .box:hover {
-        box-shadow: #916841 0px 0px 0px 3px;
+        /* box-shadow: #916841 0px 0px 0px 3px; */
         transition: all 300ms;
     }
     
@@ -89,6 +97,12 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p{
         transform: scale(1.1 , 1.1);
         transition: all 500ms ease;
     }
+    .products-view h3 {
+        font-size: 15px !important;
+    }
+    .button-header {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -100,10 +114,13 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p{
     .mb30 { width: 30%;}
     .mb70 { width: 70%;}
     .mb100 { width: 100%;}
+    .mb20 { width: 20%;}
+    .mb80 { width: 80%;}
     .container { width: 100%;}
     .left { float: left;}
     .right { float: right;}
     .clear { clear: both;}
+    .mbclear { clear: both;}
     .hidden { display: none;}
     .center { text-align: center !important;}
     .logo img { width: 30% !important;}
@@ -111,15 +128,30 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p{
     .section2 .container {
         padding: 40px 0 0 0 !important;
     }
+
+    .button-header button:focus .hidden{
+        display: block;
+    }
+
+
     .blogs-text p {
         display: none;
     }
-    .section3 .content a {
+    /* .section3 .content a {
         display: none;
-    }
+    } */
     .box:hover .product-image {
         transform: scale(0.8, 0.8);
         transition: all 300ms;
+    }
+    h1 { font-size: 25px !important;}
+    h2 { font-size: 20px !important;}
+    .main h4, h3, span, .fundiin { font-size: 75% !important;}
+    .list-menu li {
+        height: 50px !important;
+    }
+    .button-header {
+        display: block;
     }
 }
 
@@ -679,6 +711,10 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p{
     text-decoration: none;
 }
 
+.status-bar span {
+    text-transform: none;
+}
+
 .status-bar {
     padding: 10px 0;
     margin-top: 25px;
@@ -699,4 +735,467 @@ html, body, div, span,h1, h2, h3, h4, h5, h6, p{
 .text-bottom a {
     text-decoration: none;
     color: #916841;
+}
+
+/* page san pham noi bat */
+.section10 .container {height: 360px;}
+.section10 {
+    background-image: url(image/bg-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.section10 .w60 {
+    height: 100%;
+}
+
+.section10 .box {
+    padding-top: 10%;
+}
+
+.section10 h1 {
+    font-size: 35px;
+}
+
+.section10 h2 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.section10 p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.section11 { margin-top: 40px;}
+
+.section11 .list-menu {
+    margin-top: 20px;
+}
+
+.section11 .box h3 {
+    font-size: 25px;
+}
+
+/* .section11 .box a {
+    font-size: 15px;
+} */
+
+.section11 .box-category a {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+.section11 .box-category li {
+    float: left;
+    padding: 0 20px;
+}
+
+.fa-circle {
+    padding: 0 5px;
+}
+
+.products-view {
+    text-align: center;
+}
+
+
+.products-view .w33 {
+    margin-top: 10px;
+}
+
+.next-page {
+    margin-top: 40px;
+    text-align: center;
+}
+.next-page li{
+    display: inline;
+    padding: 5px 10px;
+    background-color: #1c1c1c;
+    color: #fff;
+    border-radius: 20%;
+}
+
+.next-page li:hover {
+    background-color: #916841;
+}
+
+/* page phukien */
+.section12 .container {height: 360px;}
+.section12 {
+    background-image: url(image/bg-phukien.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.section12 .w60 {
+    height: 100%;
+}
+
+.section12 .box {
+    padding-top: 10%;
+}
+
+.section12 h1 {
+    font-size: 35px;
+}
+
+.section12 p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/* page new-arrivals */
+.section13 .container {height: 360px;}
+.section13 {
+    background-image: url(image/bg-new-arrival.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.section13 .w60 {
+    height: 100%;
+}
+
+.section13 .box {
+    padding-top: 10%;
+}
+
+.section13 h1 {
+    font-size: 35px;
+}
+
+.section13 p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/* page stores */
+.sectionStores { margin-top: 40px;}
+#form {
+    width: 100%;
+    height: 35px;
+    margin: 15px 0;
+    border: 1px solid #e5e5e5;
+}
+
+.list-stores {
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+    letter-spacing: 1.2px;
+}
+
+.list-stores .fa-map-marker-alt {
+    font-size: 13px;
+}
+
+.store01 {
+    background: #000000;
+    color: #fff;
+    padding: 10px;
+}
+
+.store02 {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.store03 {
+    padding: 10px;
+}
+
+.store01:hover {
+    background-color: #916841;
+    color: #fff;
+}
+
+.store02:hover {
+    background-color: #916841;
+    color: #fff;
+}
+
+.store03:hover {
+    background-color: #916841;
+    color: #fff;
+}
+
+.shop-system { margin-top: 40px; text-align: center;}
+
+.shop-system img {
+    padding: 0 10px;
+    width: 100%;
+}
+
+.shop-system .box {
+    width: 80%;
+    margin: 0 auto;
+    color: #363f4d;
+}
+
+.shop-system h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.shop-system h2 {
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.shop-system p {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.shop-system span {
+    font-size: 19px;
+    color: #363f4d;
+    text-transform: none;
+}
+
+.shop-system a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.section14 .container {height: 250px;}
+.section14 {
+    background-image: url(image/stores-baner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.section14 .w40 {margin: 0 auto; text-align: center; height: 100%;}
+
+.section14 .w40 h1 {
+    font-size: 28px;
+    padding-top: 20%;
+    letter-spacing: 3px;
+}
+/* page service */
+.sectionService img {
+    width: 100%;
+}
+
+/* page product */
+.section15 {margin-top: 50px;}
+
+.img-small {
+    margin: 0 60px;
+}
+.img-small li {
+    float: left;
+    width: 13%;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #36363621;
+}
+
+.img-small li:hover {
+    border: 1px solid #916841;
+}
+
+.img-1 {
+    border: 1px solid #000000 !important;
+}
+
+.img-small li img {
+    width: 100%;
+}
+
+.fundiin-promotion img {
+    width: 50px;
+}
+.fundiin-promotion {
+    width: 60%;
+    height: 100%;
+    padding: 5px 0 0 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background: linear-gradient(to right, #06DECD, #744DEF);
+    color: #fff;
+    border-radius: 10px;
+}
+.form-product li {
+    float: left;
+    padding: 7px;
+    color: #1c1c1c;
+    margin-left: 5px;
+    border: 1px solid #d2d2d2;
+    cursor: pointer;
+}
+
+.item-service img {
+    width: 35px;
+}
+
+.product-title {
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.price-box {
+    letter-spacing: 0.5px;
+}
+.price {
+    font-size: 24px;
+    font-weight: 550;
+    color: #1c1c1c;
+}
+
+.old-price {
+    font-size: 20px;
+    text-decoration: line-through;
+    font-weight: 200;
+    margin-left: 15px;
+}
+
+.product-save-price {
+    color: #916841;
+}
+
+.save-price {
+    margin-top: 5px;
+}
+
+.fundiin-content {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #363636;
+}
+
+.fundiin-price {
+    background: -webkit-linear-gradient(#06DECD, #744DEF);
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+
+}
+
+.form-product span {
+    text-transform: none;
+    font-size: 18px;
+    color: #1c1c1c !important;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.product-color {
+    margin: 15px 0;
+}
+
+.product-color img {
+    max-height: 30px;
+}
+
+.product-color li {
+    padding: 5px 0 0 0;
+    position: relative;
+}
+
+.product-color li span {
+    position: relative;
+    top: -9px;
+    padding-right: 5px;
+}
+
+.img-check {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.size li {
+    position: relative;
+}
+
+.product-seclect {
+    border: 1px solid #1c1c1c !important;
+}
+
+.product-seclect span {
+    font-size: 16px;
+}
+
+.product-number li {
+    border: 0;
+}
+
+.product-number button {
+    border: 0;
+    background: #fff;
+    font-size: 20px;
+    top: -5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-btn button {
+    background: #000;
+    border: 0;
+    color: #fff;
+    width: 60%;
+    padding: 10px 20px;
+    font-size: 90%;
+    margin: 10px 0 20px 0;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.product-btn button p {
+    line-height: 20px;
+}
+
+.product-btn button:hover {
+    background: #916841;
+    transition: all 300ms;
+}
+
+.numberStore {
+    font-size: 20px;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.store {
+    color: #363636;
+    margin-bottom: 60px;
+}
+.store .fas{
+    height: 20px;
+    width: 20px;
+    color: #363636;
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+.service span {
+    top: -12px;
+    font-size: 14px;
+    position: relative;
+    margin-left: 10px;
+    color: #0657a3;
+}
+
+.service span:hover {
+    color: #916841;
+}
+
+.item-service {
+    margin-bottom: 10px;
 }
